@@ -36,7 +36,6 @@
             this.reservaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.locaçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.frotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.multasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.documentaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPrincipal = new System.Windows.Forms.MenuStrip();
             this.menuPrincipal.SuspendLayout();
@@ -95,17 +94,10 @@
             // frotaToolStripMenuItem
             // 
             this.frotaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.multasToolStripMenuItem,
             this.documentaçãoToolStripMenuItem});
             this.frotaToolStripMenuItem.Name = "frotaToolStripMenuItem";
             this.frotaToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.frotaToolStripMenuItem.Text = "Frota";
-            // 
-            // multasToolStripMenuItem
-            // 
-            this.multasToolStripMenuItem.Name = "multasToolStripMenuItem";
-            this.multasToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.multasToolStripMenuItem.Text = "Multas";
             // 
             // documentaçãoToolStripMenuItem
             // 
@@ -150,7 +142,6 @@
         private System.Windows.Forms.ToolStripMenuItem reservaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem locaçãoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem frotaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem multasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem documentaçãoToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuPrincipal;
 

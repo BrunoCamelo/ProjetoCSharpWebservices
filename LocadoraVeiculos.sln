@@ -1,9 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicacaoForm", "AplicacaoForm\AplicacaoForm.csproj", "{AB7FBCE4-065E-45A1-809D-9F5286C51EC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca", "Biblioteca\Biblioteca.csproj", "{1B72C38B-4E7A-47D5-BDA0-ED00D8F9FD5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00980B38-B9AB-4A50-BE90-8F31B62CBE9E}"
+	ProjectSection(SolutionItems) = preProject
+		..\Locadora\Locadora\Cadastro de Cliente.cs = ..\Locadora\Locadora\Cadastro de Cliente.cs
+		..\Locadora\Locadora\Cadastro de Cliente.Designer.cs = ..\Locadora\Locadora\Cadastro de Cliente.Designer.cs
+		..\Locadora\Locadora\Cadastro de Cliente.resx = ..\Locadora\Locadora\Cadastro de Cliente.resx
+		..\Locadora\Locadora\Cadastro de Plano.cs = ..\Locadora\Locadora\Cadastro de Plano.cs
+		..\Locadora\Locadora\Cadastro de Plano.Designer.cs = ..\Locadora\Locadora\Cadastro de Plano.Designer.cs
+		..\Locadora\Locadora\Cadastro de Plano.resx = ..\Locadora\Locadora\Cadastro de Plano.resx
+		..\Locadora\Locadora\CadastrodeVeiculo.cs = ..\Locadora\Locadora\CadastrodeVeiculo.cs
+		..\Locadora\Locadora\CadastrodeVeiculo.Designer.cs = ..\Locadora\Locadora\CadastrodeVeiculo.Designer.cs
+		..\Locadora\Locadora\CadastrodeVeiculo.resx = ..\Locadora\Locadora\CadastrodeVeiculo.resx
+		..\Locadora\Locadora\Locacao.cs = ..\Locadora\Locadora\Locacao.cs
+		..\Locadora\Locadora\Locacao.Designer.cs = ..\Locadora\Locadora\Locacao.Designer.cs
+		..\Locadora\Locadora\Locacao.resx = ..\Locadora\Locadora\Locacao.resx
+		..\Locadora\Locadora\Reserva.cs = ..\Locadora\Locadora\Reserva.cs
+		..\Locadora\Locadora\Reserva.Designer.cs = ..\Locadora\Locadora\Reserva.Designer.cs
+		..\Locadora\Locadora\Reserva.resx = ..\Locadora\Locadora\Reserva.resx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

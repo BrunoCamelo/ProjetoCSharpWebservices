@@ -44,11 +44,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastrodeCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrodeCliente.Designer.cs">
+      <DependentUpon>CadastrodeCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrodePlano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrodePlano.Designer.cs">
+      <DependentUpon>CadastrodePlano.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrodeVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrodeVeiculo.Designer.cs">
+      <DependentUpon>CadastrodeVeiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -56,13 +74,37 @@
     <Compile Include="FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Locacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locacao.Designer.cs">
+      <DependentUpon>Locacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reserva.Designer.cs">
+      <DependentUpon>Reserva.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CadastrodeCliente.resx">
+      <DependentUpon>CadastrodeCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrodePlano.resx">
+      <DependentUpon>CadastrodePlano.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CadastrodeVeiculo.resx">
+      <DependentUpon>CadastrodeVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locacao.resx">
+      <DependentUpon>Locacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +115,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reserva.resx">
+      <DependentUpon>Reserva.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -16,7 +16,7 @@ namespace Biblioteca
         //máquina no qual estará o banco de dados
         private const string local = @"BRUNO-VM\SQLEXPRESS";
         //nome do banco de dados no qual desejamos nos comunicar
-        private const string banco_de_dados = "Locadora";
+        private const string banco_de_dados = "LocadoraVeiculos";
         //usuário que tenha os privilégios para utilizar o banco de dados
         private const string usuario = "sa";
         //senha do usuario

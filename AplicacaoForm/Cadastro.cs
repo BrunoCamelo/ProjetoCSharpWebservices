@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Biblioteca;
+
 
 namespace AplicacaoForm
 {
@@ -22,12 +22,13 @@ namespace AplicacaoForm
         {
             try
             {
-                Aluno a = new Aluno();
-                a.Matricula = Int32.Parse(matricula.Text);
-                a.Nome = nome.Text;
+                
+                ////Aluno a = new Aluno();
+                //a.Matricula = Int32.Parse(matricula.Text);
+                //a.Nome = nome.Text;
 
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 //MessageBox.Show(
             }

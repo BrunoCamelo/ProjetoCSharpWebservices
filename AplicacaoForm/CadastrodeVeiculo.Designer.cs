@@ -1,4 +1,4 @@
-﻿namespace AplicacaoForm
+﻿namespace Locadora
 {
     partial class CadastrodeVeiculo
     {

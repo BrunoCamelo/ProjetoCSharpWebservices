@@ -19,14 +19,11 @@ namespace AplicacaoForm
 
         private void button3_Click(object sender, EventArgs e)
         {
+            
             DateTime data = dateTimePickerInicio.Value;
             
             MessageBox.Show("Data: " + data.ToShortDateString() + " Hora: "+ data.ToShortTimeString());
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

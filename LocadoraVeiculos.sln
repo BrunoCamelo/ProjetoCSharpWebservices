@@ -4,8 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicacaoForm", "AplicacaoForm\AplicacaoForm.csproj", "{AB7FBCE4-065E-45A1-809D-9F5286C51EC0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6ABCBB89-B12E-4381-BA86-35172050320B} = {6ABCBB89-B12E-4381-BA86-35172050320B}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca", "Biblioteca\Biblioteca.csproj", "{1B72C38B-4E7A-47D5-BDA0-ED00D8F9FD5B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6ABCBB89-B12E-4381-BA86-35172050320B} = {6ABCBB89-B12E-4381-BA86-35172050320B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocadoraVeiculosWCF", "LocadoraVeiculosWCF\LocadoraVeiculosWCF.csproj", "{6ABCBB89-B12E-4381-BA86-35172050320B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,10 @@ Global
 		{1B72C38B-4E7A-47D5-BDA0-ED00D8F9FD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B72C38B-4E7A-47D5-BDA0-ED00D8F9FD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B72C38B-4E7A-47D5-BDA0-ED00D8F9FD5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ABCBB89-B12E-4381-BA86-35172050320B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ABCBB89-B12E-4381-BA86-35172050320B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ABCBB89-B12E-4381-BA86-35172050320B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ABCBB89-B12E-4381-BA86-35172050320B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

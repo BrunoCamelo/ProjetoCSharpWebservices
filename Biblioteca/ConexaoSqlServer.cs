@@ -14,7 +14,7 @@ namespace Biblioteca
         //tipo responsável para se trabalhar com o sqlserver
         public SqlConnection sqlConn;
         //máquina no qual estará o banco de dados
-        private const string local = @"BRUNO-VM\SQLEXPRESS";
+        private const string local = @".\SQLEXPRESS";
         //nome do banco de dados no qual desejamos nos comunicar
         private const string banco_de_dados = "LocadoraVeiculos";
         //usuário que tenha os privilégios para utilizar o banco de dados

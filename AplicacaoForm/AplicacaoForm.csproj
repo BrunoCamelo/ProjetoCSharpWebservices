@@ -11,6 +11,21 @@
     <AssemblyName>AplicacaoForm</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +49,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,7 +82,7 @@
     <Compile Include="CadastrodeVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastrodeVeiculo.Designer.cs">
+    <Compile Include="CadastrodeVeiculo.designer.cs">
       <DependentUpon>CadastrodeVeiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipal.cs">
@@ -82,11 +99,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reserva.cs">
+    <Compile Include="CadastrodeReserva.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reserva.Designer.cs">
-      <DependentUpon>Reserva.cs</DependentUpon>
+    <Compile Include="CadastrodeReserva.Designer.cs">
+      <DependentUpon>CadastrodeReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ReservaReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CadastrodeCliente.resx">
       <DependentUpon>CadastrodeCliente.cs</DependentUpon>
@@ -115,8 +137,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reserva.resx">
-      <DependentUpon>Reserva.cs</DependentUpon>
+    <EmbeddedResource Include="CadastrodeReserva.resx">
+      <DependentUpon>CadastrodeReserva.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -127,15 +149,49 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Service References\ReservaReference\LocadoraVeiculosWCF.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ReservaReference\service.wsdl" />
+    <None Include="Service References\ReservaReference\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ReservaReference\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Biblioteca\Biblioteca.csproj">
-      <Project>{1b72c38b-4e7a-47d5-bda0-ed00d8f9fd5b}</Project>
-      <Name>Biblioteca</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ReservaReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReservaReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReservaReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReservaReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

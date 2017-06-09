@@ -54,20 +54,20 @@
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // veiculosToolStripMenuItem
             // 
             this.veiculosToolStripMenuItem.Name = "veiculosToolStripMenuItem";
-            this.veiculosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.veiculosToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.veiculosToolStripMenuItem.Text = "Veiculos";
             // 
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
-            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.marcasToolStripMenuItem.Text = "Montadoras";
             // 
             // locaçãoToolStripMenuItem
@@ -82,14 +82,16 @@
             // reservaToolStripMenuItem
             // 
             this.reservaToolStripMenuItem.Name = "reservaToolStripMenuItem";
-            this.reservaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reservaToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.reservaToolStripMenuItem.Text = "Reserva";
+            this.reservaToolStripMenuItem.Click += new System.EventHandler(this.reservaToolStripMenuItem_Click);
             // 
             // locaçãoToolStripMenuItem1
             // 
             this.locaçãoToolStripMenuItem1.Name = "locaçãoToolStripMenuItem1";
-            this.locaçãoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.locaçãoToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.locaçãoToolStripMenuItem1.Text = "Locação";
+            this.locaçãoToolStripMenuItem1.Click += new System.EventHandler(this.locaçãoToolStripMenuItem1_Click);
             // 
             // frotaToolStripMenuItem
             // 
@@ -124,7 +126,9 @@
             this.Controls.Add(this.menuPrincipal);
             this.MainMenuStrip = this.menuPrincipal;
             this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loc+ Locadora de Veículos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuPrincipal.ResumeLayout(false);
             this.menuPrincipal.PerformLayout();
             this.ResumeLayout(false);
@@ -144,8 +148,6 @@
         private System.Windows.Forms.ToolStripMenuItem frotaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem documentaçãoToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuPrincipal;
-
-
     }
 }
 

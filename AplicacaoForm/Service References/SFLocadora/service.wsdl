@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LocadoraDBWCF" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/LocadoraVeiculosWCF" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILocadoraWCF_InsereReserva_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsereReserva" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_InsereReserva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsereReservaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_PesquisarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:PesquisarCliente" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_PesquisarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PesquisarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_ListarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCliente" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_ListarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_InsereCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsereCliente" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_InsereCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsereClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_AlteraCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:AlteraCliente" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_AlteraCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AlteraClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_ExcluiCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluiCliente" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_ExcluiCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluiClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_PesquisarVeiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:PesquisarVeiculo" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_PesquisarVeiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PesquisarVeiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_InsereVeiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsereVeiculo" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_InsereVeiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsereVeiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_AlteraVeiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AlteraVeiculo" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_AlteraVeiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AlteraVeiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_ExcluiVeiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluiVeiculo" />
+  </wsdl:message>
+  <wsdl:message name="ILocadoraWCF_ExcluiVeiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluiVeiculoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILocadoraWCF">
+    <wsdl:operation name="InsereReserva">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocadoraWCF/InsereReserva" message="tns:ILocadoraWCF_InsereReserva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocadoraWCF/InsereReservaResponse" message="tns:ILocadoraWCF_InsereReserva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PesquisarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocadoraWCF/PesquisarCliente" message="tns:ILocadoraWCF_PesquisarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocadoraWCF/PesquisarClienteResponse" message="tns:ILocadoraWCF_PesquisarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocadoraWCF/ListarCliente" message="tns:ILocadoraWCF_ListarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocadoraWCF/ListarClienteResponse" message="tns:ILocadoraWCF_ListarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsereCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocadoraWCF/InsereCliente" message="tns:ILocadoraWCF_InsereCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocadoraWCF/InsereClienteResponse" message="tns:ILocadoraWCF_InsereCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AlteraCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocadoraWCF/AlteraCliente" message="tns:ILocadoraWCF_AlteraCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocadoraWCF/AlteraClienteResponse" message="tns:ILocadoraWCF_AlteraCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocadoraWCF/ExcluiCliente" message="tns:ILocadoraWCF_ExcluiCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocadoraWCF/ExcluiClienteResponse" message="tns:ILocadoraWCF_ExcluiCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PesquisarVeiculo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocadoraWCF/PesquisarVeiculo" message="tns:ILocadoraWCF_PesquisarVeiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocadoraWCF/PesquisarVeiculoResponse" message="tns:ILocadoraWCF_PesquisarVeiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsereVeiculo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocadoraWCF/InsereVeiculo" message="tns:ILocadoraWCF_InsereVeiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocadoraWCF/InsereVeiculoResponse" message="tns:ILocadoraWCF_InsereVeiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AlteraVeiculo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocadoraWCF/AlteraVeiculo" message="tns:ILocadoraWCF_AlteraVeiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocadoraWCF/AlteraVeiculoResponse" message="tns:ILocadoraWCF_AlteraVeiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiVeiculo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocadoraWCF/ExcluiVeiculo" message="tns:ILocadoraWCF_ExcluiVeiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocadoraWCF/ExcluiVeiculoResponse" message="tns:ILocadoraWCF_ExcluiVeiculo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILocadoraWCF" type="tns:ILocadoraWCF">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsereReserva">
+      <soap:operation soapAction="http://tempuri.org/ILocadoraWCF/InsereReserva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisarCliente">
+      <soap:operation soapAction="http://tempuri.org/ILocadoraWCF/PesquisarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCliente">
+      <soap:operation soapAction="http://tempuri.org/ILocadoraWCF/ListarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsereCliente">
+      <soap:operation soapAction="http://tempuri.org/ILocadoraWCF/InsereCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlteraCliente">
+      <soap:operation soapAction="http://tempuri.org/ILocadoraWCF/AlteraCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiCliente">
+      <soap:operation soapAction="http://tempuri.org/ILocadoraWCF/ExcluiCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PesquisarVeiculo">
+      <soap:operation soapAction="http://tempuri.org/ILocadoraWCF/PesquisarVeiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsereVeiculo">
+      <soap:operation soapAction="http://tempuri.org/ILocadoraWCF/InsereVeiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlteraVeiculo">
+      <soap:operation soapAction="http://tempuri.org/ILocadoraWCF/AlteraVeiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiVeiculo">
+      <soap:operation soapAction="http://tempuri.org/ILocadoraWCF/ExcluiVeiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LocadoraDBWCF">
+    <wsdl:port name="BasicHttpBinding_ILocadoraWCF" binding="tns:BasicHttpBinding_ILocadoraWCF">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/LocadoraVeiculosWCF/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

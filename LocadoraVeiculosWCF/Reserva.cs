@@ -10,6 +10,8 @@ namespace LocadoraVeiculosWCF
     [DataContract]
     public class Reserva
     {
+        //classe modelo
+
         [DataMember]
         public int Res_Codigo { get; set; }
 
@@ -45,7 +47,6 @@ namespace LocadoraVeiculosWCF
 
         [DataMember]
         public string Vei_Placa { get; set; }
-
-    
+  
     }
 }

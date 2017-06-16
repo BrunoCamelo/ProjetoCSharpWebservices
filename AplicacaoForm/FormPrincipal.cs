@@ -17,25 +17,30 @@ namespace AplicacaoForm
         {
             InitializeComponent();
         }
-
-      
+              
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CadastrodeCliente formcadCli = new CadastrodeCliente();
-            formcadCli.ShowDialog(this);
+            formcadCli.ShowDialog();
         }
 
         private void locaçãoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Locacao formlocacao = new Locacao();
-            formlocacao.ShowDialog(this);
+            formlocacao.ShowDialog();
         }
 
         private void reservaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
             CadastrodeReserva formreserva = new CadastrodeReserva();
-            formreserva.ShowDialog(this);
+            formreserva.ShowDialog();
+        }
+
+        private void veiculosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastrodeVeiculo formveiculos = new CadastrodeVeiculo();
+            formveiculos.ShowDialog();
         }
     }
 }

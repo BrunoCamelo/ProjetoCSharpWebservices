@@ -9,11 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicacaoForm", "AplicacaoF
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca", "Biblioteca\Biblioteca.csproj", "{1B72C38B-4E7A-47D5-BDA0-ED00D8F9FD5B}"
-	ProjectSection(ProjectDependencies) = postProject
-		{6ABCBB89-B12E-4381-BA86-35172050320B} = {6ABCBB89-B12E-4381-BA86-35172050320B}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocadoraVeiculosWCF", "LocadoraVeiculosWCF\LocadoraVeiculosWCF.csproj", "{6ABCBB89-B12E-4381-BA86-35172050320B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1B72C38B-4E7A-47D5-BDA0-ED00D8F9FD5B} = {1B72C38B-4E7A-47D5-BDA0-ED00D8F9FD5B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

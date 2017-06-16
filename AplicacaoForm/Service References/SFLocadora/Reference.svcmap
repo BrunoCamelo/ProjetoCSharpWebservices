@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="85e76fe1-86c8-45a2-9e6c-f8bf84448558" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/LocadoraVeiculosWCF/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="e44ee2dc-710f-40b0-98c4-a247e0faf3c2" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/LocadoraVeiculosWCF/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="48f5e0cb-e0e5-4361-ab06-7f0fa3c738e8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/LocadoraVeiculosWCF/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="cc4c6420-999e-4994-9fb1-5856295288b1" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/LocadoraVeiculosWCF/Service1/mex" />
+    <MetadataFile FileName="LocadoraVeiculosWCF.xsd" MetadataType="Schema" ID="0f1b4d3c-389b-421f-a35f-cde8456bd339" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/LocadoraVeiculosWCF/Service1/mex" />
+    <MetadataFile FileName="System.Data.xsd" MetadataType="Schema" ID="a49e5c69-01f3-4f4b-9276-e14aa60eafa8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/LocadoraVeiculosWCF/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

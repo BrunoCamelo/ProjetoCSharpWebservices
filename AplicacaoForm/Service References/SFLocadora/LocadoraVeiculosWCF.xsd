@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LocadoraVeiculosWCF" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LocadoraVeiculosWCF" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Reserva">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cli_Codigo" type="xs:int" />
+      <xs:element minOccurs="0" name="Res_CodPlano" type="xs:int" />
+      <xs:element minOccurs="0" name="Res_Codigo" type="xs:int" />
+      <xs:element minOccurs="0" name="Res_DataReserva" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Res_DataRetorno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Res_Diarias" type="xs:int" />
+      <xs:element minOccurs="0" name="Res_Horas" type="xs:int" />
+      <xs:element minOccurs="0" name="Res_PcDesconto" type="xs:double" />
+      <xs:element minOccurs="0" name="Res_Placa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Res_VlDesconto" type="xs:double" />
+      <xs:element minOccurs="0" name="Res_VlTotal" type="xs:double" />
+      <xs:element minOccurs="0" name="Vei_Placa" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Reserva" nillable="true" type="tns:Reserva" />
+  <xs:complexType name="Clientes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cli_Bairro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_CEP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_CPF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_Categoria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_Cidade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_Codigo" type="xs:int" />
+      <xs:element minOccurs="0" name="Cli_DataHabilitacao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_DatadeNascimento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_Emissor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_Endereco" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_Expedicao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_RG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_RegistroRenach" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_Sexo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_Telefone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_UF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cli_Validade" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Clientes" nillable="true" type="tns:Clientes" />
+  <xs:complexType name="Veiculos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Vei_Airbags" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_AnoFabricacao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_AnoModelo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_ArCondicionado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_BancoCouro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_Cambio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_Categoria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_ComputadordeBordo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_ConectividadeInternet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_Cor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_FreiosABS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_Marca" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_Modelo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_Motor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_NavegadorGPS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_Placa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_RodaLigaLeve" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_TipoDirecao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_TravaEletrica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_UF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vei_VidroEletrico" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Veiculos" nillable="true" type="tns:Veiculos" />
+</xs:schema>
